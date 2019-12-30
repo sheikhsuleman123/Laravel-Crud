@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StudentController@index');
+
 
 Route::get('/user/{id}', function ($id) {
     return "You are in ".$id;
