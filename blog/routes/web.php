@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'StudentController@index');
-
+Route::get('/create', 'StudentController@create')->name('create');
 
 Route::get('/user/{id}', function ($id) {
     return "You are in ".$id;
